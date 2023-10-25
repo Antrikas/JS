@@ -1,10 +1,14 @@
-// celsius-to-fahrenheit formula:
-// F = C x 1.8 +32
 
-let celsious =10;
-let fahrenheit = celsious * 1.8 +32;
+let subscribed = false
+let loggedIn = true
 
-console.log (fahrenheit)
+if (subscribed === true ) {
+    console.log ('show the video')
+}
 
-let bool = '1' === 1
-console.log(bool)
+else if (loggedIn === true) {
+    console.log ('tell the user to upgrade their subscription')
+}
+else {
+    console ('tell user to log into account')
+}
