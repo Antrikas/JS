@@ -1,17 +1,29 @@
+// DRY = Don't repeat yourself
+//let count = 1;
 
-let cash = 20
-let price = 50
-let difference = cash - price
+//while (count <= 100) {
+  //  console.log (count)
+    //count = count + 1; 
+//}
 
-if (cash > price) {
+//for (let i = 0; i < 100; i++ ) {
+//console.log (i + 1);
+//}
+
+for (let i = 1; i <= 20; ++i) {
+console.log (i);
+
+if (i % 3 === 0 && i % 5 === 0) 
+console.log(`${i} -> Frontend Simplified`)
+
+else if (i % 3 === 0) 
+    console.log(`${i} -> Frontend`)
+
+else if (i % 5 === 0) 
+    console.log(`${i} -> Simplified`)
+
+else {
+    console.log (`${i} -> ${i}`)
+}
    
-    console.log (`you paid extra - here's ${difference} dollars back`)
-}
-
-else if ( cash === price ) {
-    console.log ("you paid the exact amount, have a nice day")
-}
-
-else { 
-    console.log (`not enouh money - you still owe ${difference * -1} dollars`)
 }
