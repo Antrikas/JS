@@ -1,29 +1,39 @@
-/* 
-
-Filter out all the 'FAIL' elements in an array
-
-*/
-
-
-
-/*let arr = [ 1, 5, 10, 3]
-
-
-
-let newArray = arr.map((dollars) => dollars * 100)
-
-console.log (newArray);
-
-*/
-
-let dollars = [ 0, 10, 20]
-
-let cents = [];
-
-for (let i = 0; i < dollars.length; ++i) {
-    cents.push (dollars[i] * 100)
-    
+let users = [{
+    username: "Andreas", 
+    email: "antrikos@gmail.com",
+    password:"1234", 
+    subscriptionStatus: "VIP",
+    discordId: "andreas#007", 
+    lessonsCompleted: [0, 1] 
+},
+{
+    username: "Matt", 
+    email: "matt@gmail.com",
+    password:"1434", 
+    subscriptionStatus: "VIP",
+    discordId: "matt#007", 
+    lessonsCompleted: [0, 1] 
+},
+{   username: "gio", 
+    email: "gio@gmail.com",
+    password:"15234", 
+    subscriptionStatus: "VIP",
+    discordId: "gior#007", 
+    lessonsCompleted: [0, 1] 
 }
-    
-    console.log (cents)
-    
+]
+
+function register  (user) {
+    users.push (user);
+}
+   
+register ({
+username: "Andreas", 
+email: "antrikos@gmail.com",
+ password: "1234",
+ subscriptionStatus: "VIP",
+ discordId: "andreas#006",
+ lessonsCompleted: [0, 1] 
+});
+
+ console.log (users);
