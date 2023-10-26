@@ -1,10 +1,10 @@
-//DRY - Don't Reapeat Yourself
+let arr = [20, 30, 40, 50, 100]
 
-//Function Definition
-function welcomePersonToFES(firstName, lastName) {
-    console.log (`Welcome to FES, ${firstName} ${lastName} `)
-}
+let newArr = arr.filter ((element) => { 
+    console.log (element)
+    if (element < 50)
+    return true;
 
-//Call the Function
-welcomePersonToFES ( 'Andreas', 'Antoniades');
-welcomePersonToFES ('Giannis', 'Ioanou')
+})
+
+console.log (newArr)
